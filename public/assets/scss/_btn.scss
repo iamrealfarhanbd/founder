@@ -1,0 +1,114 @@
+/* 10. btn */
+.c-btn {
+	backface-visibility: hidden;
+	color: $black;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	padding: 22px 36px;
+	position: relative;
+	text-align: center;
+	transition: .3s;
+	font-weight: 700;
+    text-transform: uppercase;
+	border:2px solid #dddddd;
+	font-family: $roboto;
+	& i{
+		font-size: 16px;
+		padding-left: 12px;
+	}
+    &:hover{
+		color: $white;
+		border-color: $theme-color;
+		background: $theme-color;
+    }
+}
+.btn-theme{
+	background: $theme-color;
+	color: $white;
+	transition: .3s;
+	border:none;
+	&:hover{
+		background: $black;
+		color: $white;
+	}
+}
+.btn-white{
+	background: $white;
+	color: $black;
+	transition: .3s;
+	border:none;
+	padding: 23px 36px;
+	&:hover{
+		background: $theme-color;
+		color: $white;
+	}
+}
+.btn-round {
+	background: transparent;
+	border-radius: 30px;
+	border-color: $hr-border-color3;
+	display: inline-block;
+	color: $white;
+	padding: 14px 30px;
+	@media #{$laptop} {
+		padding: 12px 10px;
+	}
+	& i {
+		margin-right: 5px;
+	}
+	&:hover {
+		background: $blue-soft5;
+		border-color: $blue-soft5;
+	}
+	&.active {
+		background: $blue-soft5;
+		border-color: $blue-soft5;
+		&:hover {
+			background: transparent;
+			border-color: $hr-border-color3;
+		}
+	}
+}
+.popup-video {
+	color: $theme-color;
+	font-size: 12px;
+	display: inline-block;
+	position: absolute;
+	background: $white;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	animation: pulseBig infinite 4s linear;
+	z-index: 7;
+}
+.btn-round-02 {
+	color:$white;
+	background: $theme-color;
+	border: transparent;
+	display: inline-block;
+	border-radius: 30px;
+	&:hover {
+		background: $blue-soft5;
+	}
+}
+.btn-blue-style {
+	color: white;
+	border-radius: 40px;
+	background: #3662ff !important;
+	display: inline-block;
+	padding: 21px 40px;
+	line-height: 1;
+	border: none;
+	&:hover {
+		background-color: $theme-color !important;
+		border: transparent;
+	}
+}

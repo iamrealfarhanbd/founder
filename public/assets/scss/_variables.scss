@@ -1,0 +1,59 @@
+// Font Family
+$roboto: 'roboto', ;
+$hind: 'hind', ;
+$ibm: 'IBM Plex Sans', sans-serif;
+
+// Colors ---------------
+$white: #ffffff;
+$black: #062a35;
+$black2: #141414;
+$black-soft: #333333;
+$black-soft2: #417b8d;
+$red: #e25a44;
+$blue: #1e2c8a;
+$blue-dark: #0e1851;
+$blue-dark2: #000846;
+$blue-02: #0c3542;
+$blue-soft: #11202d;
+$blue-soft2: #4582ff;
+$blue-soft3: #1771e6;
+$blue-soft4: #1da1f2;
+$blue-soft5: #3662ff;
+$blue-soft6: #1a245d;
+$grey:#eaf4f7;
+$grey-soft:#6e838a;
+$grey-soft2:#f5f6fa;
+$green:#03b664;
+$red:#fd1818;
+$theme-color: #ea5822;
+$body-text-color: #708389;
+$body-text-color2: #a3b5c3;
+$body-text-color3: #94a7b5;
+$body-text-color4: #3662ff;
+$body-text-color5: #999ec4;
+$body-text-color6: #6a6a6a;
+$body-text-color7: #757575;
+$body-text-color8: #667e85;
+$hr-border-color:#eceff8;
+$hr-border-color2:#e2e2e2;
+$hr-border-color3:#4f4d80;
+$hr-border-color4:#252f6c;
+$hr-border-color5:#5a7efe;
+$hr-border-color6:#1d303f;
+$hr-border-color7:#ebebeb;
+$hr-border-color8:#dedede;
+
+// Heading Color
+$heading-color: #062a35;
+
+
+
+// Responsive Variables
+$xxl: 'only screen and (min-width: 1801px) and (max-width: 1900px)';
+$xl: 'only screen and (min-width: 1601px) and (max-width: 1800px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+

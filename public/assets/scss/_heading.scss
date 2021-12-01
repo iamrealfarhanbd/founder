@@ -1,0 +1,36 @@
+/* 6. heading */
+.section-title{
+    & span{
+        color: $theme-color;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    & h2{
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 0;
+        margin-top: 14px;
+        letter-spacing: -0.3px;
+    }
+    & p{
+        margin-bottom: 0;
+        margin-top: 24px;
+        margin-right: 34px;
+    }
+}
+.section-title-white{
+    & span{
+        color: $white;
+    }
+    & h2{
+        color: $white;
+    }
+}
+.section-title-theme {
+    & span{
+        color: $theme-color;
+    }
+    & h2{
+        color: $theme-color;
+    }
+}

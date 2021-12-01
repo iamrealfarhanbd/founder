@@ -1,0 +1,161 @@
+/* 7. gallery */
+.portfolio-menu {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 26px;
+    margin-left: 60px;
+    margin-right: 60px;
+    @media #{$md} {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media #{$xs} {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media #{$sm} {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    & button {
+        background: none;
+        border: medium none;
+        color: $black;
+        font-size: 18px;
+        line-height: 1;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-weight: 700;
+        position: relative;
+        padding: 0 14px;
+        font-family: $roboto;
+        margin: 0;
+        &::before{
+            position: absolute;
+            content: "";
+            background-color: $theme-color;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: -33px;
+            transition: .3s;
+            @media #{$md} {
+                display: none;
+            }
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$sm} {
+                display: none;
+            }
+        }
+    }
+}
+.portfolio-menu button:focus {
+    outline: 0 none;
+}
+.portfolio-menu button:hover::before {
+    width: 100%;
+}
+.portfolio-menu button.active::before {
+    width: 100%;
+}
+.portfolio-menu button:hover {
+    color: $theme-color;
+}
+.portfolio-menu button.active {
+    color: $theme-color;
+}
+.custom {
+    margin: 0 -15px;
+}
+.gallery-img{
+    overflow: hidden;
+    position: relative;
+    & > a{
+        position: relative;
+        display: block;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+            background: $black;
+            transition: .3s;
+            z-index: 1;
+            opacity: 0;
+        }
+        & img{
+            width: 100%;
+            transition: .3s;
+        }
+    }
+}
+.gallery-wrapper:hover .gallery-img >a::before{opacity: .75;}
+.gallery-wrapper:hover .gallery-img img{transform:scale(1.1) ;}
+.gallery-icon{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9;
+    transition: .3s;
+    opacity: 0;
+    & > a{
+        font-size: 24px;
+        color: $white;
+        height: 65px;
+        width: 65px;
+        line-height: 68px;
+        text-align: center;
+        display: inline-block;
+        transition: .3s;
+        background: $theme-color;
+        &:hover{
+        }
+    }
+}
+.gallery-wrapper:hover .gallery-icon{
+    opacity: 1;
+}
+.gallery-text{
+    position: absolute;
+    z-index: 99;
+    top: 40px;
+    left: 40px;
+    opacity: 0;
+    transition: .3s;
+    & h3{
+        font-size:30px;
+        color: $white;
+        margin-bottom: 7px;
+        letter-spacing: -0.3px;
+        & a{
+            transition: .3s;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+    & span{
+     font-size:15px;
+     color: $white;
+     text-transform: capitalize;
+     font-weight: 500;
+    }
+}
+.gallery-wrapper:hover .gallery-text{
+    opacity: 1;
+}
+//our-courses
+.pr-menu-03 {
+   & button {
+        color:$black !important;
+        font-size: 16px;
+        font-family: $hind;
+        font-weight: 600;
+        line-height: 1;
+        margin: 0 2px;
+    }
+}

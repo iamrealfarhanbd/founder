@@ -1,0 +1,289 @@
+//hero-area
+.hero-area {
+   & .slider-img {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        z-index: 1;
+        width: 51%;
+        height: auto;
+        @media #{$laptop}{
+            top: 200px;
+        }
+    }
+}
+
+/*. slider */
+.slider-height {
+	min-height: 950px;
+    background-position: center top;
+    @media #{$lg}{
+        min-height: 600px;
+    }
+    @media #{$md}{
+        min-height: 500px;
+    }
+    @media #{$xs}{
+        min-height: 500px;
+    }
+}
+.single-slider{
+    background-position: center center;
+    background-size: cover;
+}
+.hero-content{
+    position: relative;
+    z-index: 3;
+    @media #{$md}{
+        margin-top: 8px;
+    }
+    @media #{$xs}{
+        margin-top: 8px;
+    }
+}
+.hero-slider-caption {
+   & span{
+       font-size: 18px;
+       font-weight: 600;
+       color: $theme-color;
+       text-transform: capitalize;
+       & i{
+         font-size: 22px;
+         margin-right: 15px;
+       }
+   }
+   & h2 {
+        font-size: 80px;
+        margin-top: 18px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -0.3px;
+        @media #{$lg}{
+            font-size: 60px;
+             margin-bottom: 12px;
+        }
+        @media #{$md}{
+            font-size: 50px;
+            margin-bottom: 14px;
+        }
+        @media #{$xs}{
+            font-size: 35px;
+            margin-bottom: 15px;
+            margin-top: 22px;
+        }
+    }
+}
+.slider-search-form {
+    position: relative;
+    & input {
+        width: 100%;
+        height: 90px;
+        border: none;
+        padding: 0 35px;
+        font-size: 20px;
+        color: #5b7076;
+        font-weight: 500;
+        background: $white;
+        &::-moz-placeholder {
+            font-size: 20px;
+            color: #5b7076;
+            font-weight: 500;
+        }
+        &::placeholder {
+            font-size: 20px;
+            color: #5b7076;
+            font-weight: 500;
+        }
+    }
+    & button {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: $theme-color;
+        color: $white;
+        border: 0;
+        height: 66px;
+        width: 66px;
+        line-height: 66px;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover {
+            background: $theme-color;
+        }
+    }
+}
+.support-area {
+    margin-top: 40px;
+    & p {
+        padding-right: 60px;
+        margin-bottom: 0;
+    }
+}
+.support {
+    position: relative;
+    padding-left: 50px;
+    &:before {
+        content: '';
+        background-color: $theme-color;
+        position: absolute;
+        left: -15px;
+        top: 5px;
+        width: 3px;
+        height: 40px;
+        z-index: 1;
+    }
+   & .support-icon {
+      & i {
+            color: $theme-color;
+            font-size: 38px;
+            margin-right: 18px;
+        }
+   }
+   & .support-text {
+       & span {
+            color: $body-text-color8;
+            font-size: 13px;
+            font-family: $hind;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        & h6 {
+            font-size: 18px;
+            letter-spacing: -0.3px;
+        } 
+   } 
+}
+
+//hero-02-area
+.hero-02-area {
+    &::before {
+        content: '';
+        position: absolute;
+        background: $blue-dark2;
+        opacity: 0.6;
+        right: 0;
+        top:0;
+        width: 751px;
+        height: 729px;
+    }
+   & .slider-img {
+        position: absolute;
+        right: 200px;
+        top: 182px;
+        z-index: 1;
+        width: 37%;
+        height: auto;
+        @media #{$laptop} {
+            right: 130px;
+        }
+        @media #{$lg} {
+            right: 100px;
+        }
+        @media #{$md} {
+            right: 90px;
+            top:100px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            clip-path: polygon(7% 0%, 100% 0%, 91% 100%, 0% 100%);
+            background: #3662ff;
+            left: 7px;
+            top: -15px;
+            width: 339px;
+            height: 312px;
+            z-index: -1;
+        }
+    }
+    & .slider-height-02 {
+        @media #{$xs} {
+            min-height: 650px;
+        }
+        @media #{$sm} {
+            min-height: 650px;
+        }
+    }
+}
+.slider-video {
+	right: 150px;
+    bottom: 78px;
+    @media #{$md} {
+        right: 50px;
+        bottom: 40px;
+    }
+    @media #{$xs} {
+        right: 0;
+        bottom: -50px;
+        left: 0;
+        text-align: center;
+    }
+    @media #{$sm} {
+        right: 0;
+        bottom: -50px;
+        left: 0;
+        text-align: center;
+    }
+   & .slider-video-img {
+        position: relative;
+        z-index: 3;
+        &::before {
+            content: '';
+            position: absolute;
+            background: $blue-dark2;
+            opacity: 0.6;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.hero-02-content {
+   & .catlist {
+   & li {
+       display: inline-block;
+       & a {
+            color: $white;
+            font-size: 18px;
+            line-height: 1;
+            font-family: $hind;
+            font-weight: 600;
+            position: relative;
+            padding: 0 25px;
+            &::before {
+                content: '';
+                position: absolute;
+                border: 2px solid $hr-border-color3;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                left: -5px;
+                top:7px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                background: $hr-border-color3;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                left: -1px;
+                top:11px;
+            }
+        }
+    } 
+   }
+  & h2 {
+       color: $white;
+       margin-bottom: 20px;
+   }
+   &  p{
+        color: $white;
+        margin-bottom: 40px; 
+   }
+   & .hero-slider-caption {
+       & a.c-btn {
+            padding: 20px 40px;
+        }
+   } 
+}

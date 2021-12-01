@@ -1,0 +1,180 @@
+//accordion
+.faq-thumbs {
+    & img {
+        width: 100%;
+    }
+}
+.card {
+    background: none;
+    border: 0;
+
+    & .card-header {
+        background: 0;
+        border: 0;
+        padding: 0;
+
+        & button {
+            color: $black;
+            font-size: 18px;
+            line-height: 1;
+            font-family: "roboto", sans-serif;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            text-align: left;
+            padding: 24px 30px 24px 0;
+            border-radius: 0;
+            word-wrap: normal;
+            white-space: normal;
+            border-bottom: 1px solid $hr-border-color7;
+            @media #{$xs} {
+                font-size: 14px;
+            }
+        }
+        
+        & .btn-link {
+            position: relative;
+
+            &::before {
+                content: "\f054";
+                position: absolute;
+                font-family: "Font Awesome 5 pro";
+                font-size: 18px;
+                color: $theme-color;
+                line-height: 1;
+                right: 40px;
+                top: 50%;
+                transform: translateY(-50%) rotate(90deg);
+                z-index: 1;
+                @include transition(.3s);
+
+                @media #{$xs} {
+                    right: 20px;
+                }
+
+                @media #{$sm} {
+                    right: 20px;
+                }
+            }
+        }
+        & .collapsed {
+            position: relative;
+
+            &::before {
+                content: "\f054";
+                position: absolute;
+                font-family: "Font Awesome 5 pro";
+                font-size: 18px;
+                color: $theme-color;
+                line-height: 1;
+                right: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+                @include transition(.3s);
+
+                @media #{$xs} {
+                    right: 20px;
+                }
+
+                @media #{$sm} {
+                    right: 20px;
+                }
+            }
+        }
+        & .btn-link.focus,
+        & .btn-link:focus {
+            text-decoration: none;
+            border-color: none;
+            box-shadow: none;
+        }
+
+        & .btn-link:hover {
+            color: none;
+            text-decoration: none;
+        }
+    }
+
+    & .card-body {
+        padding: 0;
+
+        & .card-content {
+            padding: 30px 30px 25px 30px;
+            border-bottom: 1px solid $hr-border-color7;
+            border-right: 1px solid $hr-border-color7;
+            border-left: 1px solid $hr-border-color7;
+            @media #{$xs} {
+                padding: 30px 10px 25px 10px;
+            }
+            & .card-thumb {
+                margin-right: 30px;
+                margin-top: 6px;
+                & img {
+                    width: 100%;
+                    display: block;
+                }
+                @media #{$xs} {
+                    float: none;
+                    margin-bottom: 15px;
+                }
+            }
+
+            & p {
+                margin-bottom: 0;
+                overflow: hidden;
+            }
+        }
+    }
+}
+//faq-details-area
+.authors-03 {
+    padding: 60px 45px 35px 45px;
+    @media #{$xs} {
+        padding: 60px 15px 35px 15px;
+    }
+    & .authors-03-text {
+        & span {
+            color: #ea5822;
+            font-size: 14px;
+            line-height: 1;
+            font-family: "hind";
+            display: inline-block;
+            margin-bottom: 14px;
+        }
+    }
+}
+.faq-details-area {
+    padding: 55px 60px 88px 60px;
+    @media #{$xs} {
+        padding:55px 15px 88px 15px;
+    }
+    @media #{$sm} {
+        padding:55px 15px 88px 15px;
+    }
+    & h3 {
+        font-size: 30px;
+    }
+}
+.card-02 {
+    margin-bottom: 15px;
+    & .card-header {
+        & button {
+            &.btn-link {
+                color: $theme-color;
+            }
+            &.collapsed {
+                color: $black;
+            }
+        }
+    }
+    & .card-body {
+        .card-content {
+            padding: 30px 0px 25px 0px;
+            border-bottom: 1px solid #ebebeb;
+            border-right: 0;
+            border-left: 0;
+        } 
+    } 
+}

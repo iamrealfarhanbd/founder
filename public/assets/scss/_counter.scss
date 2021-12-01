@@ -1,0 +1,125 @@
+/* 4. counter */
+.counter-bg{
+    margin-top: -76px;
+    position: relative;
+    z-index: 3;
+    @media #{$lg} {
+        margin-top: 50px;
+    }
+    @media #{$md} {
+        margin-top: 50px;
+    }
+    @media #{$xs} {
+        margin-top: 50px;
+    }
+}
+.counter-wrapper{
+     box-shadow: 0px 10px 30px 0px rgba(234, 244, 247, 0.9);
+     background: $white;
+     padding: 33px 20px 30px 40px;
+     @media #{$lg} {
+         padding: 33px 10px 30px 10px;
+     }
+}
+.counter-icon{
+    margin-right: 20px;
+    @media #{$lg} {
+        margin-right: 13px;
+    }
+    & i{
+        color: $theme-color;
+        font-size: 40px;
+        position: relative;
+        top: 2px;
+    }
+}
+.counter-text{
+    overflow: hidden;
+    & h1{
+        color: $theme-color;
+        line-height: 1;
+        font-size: 35px;
+        margin-bottom: 4px;
+        & > span{
+
+        }
+    }
+    & > span{
+        color: $grey-soft;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+//brand-area
+.single-brand {
+	display: inline-block;
+}
+//counter-area-02
+.counter-area-02 {
+   & .counter-bg {
+        margin-top: -180px;
+        position: relative;
+        z-index: 3;
+        @media #{$md} {
+            margin-top: 0;
+        }
+        @media #{$xs} {
+            margin-top: 0;
+        }
+        @media #{$sm} {
+            margin-top: 0;
+        }
+    }
+}
+.counter-wrapper-02 {
+    padding: 75px 90px 55px 90px;
+    @media #{$lg} {
+        padding: 75px 15px 55px 15px;
+    }
+    @media #{$xs} {
+        padding: 75px 15px 55px 15px;
+    }
+    @media #{$sm} {
+        padding: 75px 15px 55px 15px;
+    }
+    &.counter-border {
+        border-right:1px solid $hr-border-color5;
+        border-left:1px solid $hr-border-color5;
+    }
+   & .counter-icon {
+       margin-right: 0;
+       & i {
+            color: $white;
+            font-size: 45px;
+            line-height: 1;
+        }
+    } 
+   & .counter-text {
+        & > span {
+            color: $white;
+            font-size: 15px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        & h1 {
+            color: $white;
+            line-height: 1;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        & p {
+            color:$white;
+        }
+   } 
+} 
+//counter-area-03
+.counter-area-03 {
+   & .counter-bg {
+        margin-top: 0;
+        margin-bottom: -100px;
+    }
+}
+.counter-wrapper-03 {
+    border-top:2px solid $theme-color;
+}
